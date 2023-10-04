@@ -1,0 +1,405 @@
+/* CSS RESET */
+@font-face {
+  font-family: "kumbh";
+  src: url(../font/KumbhSans-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "kumbh";
+}
+
+img,
+input {
+  width: 100%;
+}
+
+body {
+  --orange: #ff7d1a;
+  --pale-orange: #ffe4cf;
+  --gray: #646464;
+  --pale-gray: #b4b4b4;
+  --docwidth-mob: 90%;
+  --docwidth-desktop: 70%;
+}
+
+/*======================================================== HEADER ========================================================= */
+/*======================================================== HEADER ========================================================= */
+
+/* NAVBAR */
+/* NAVBAR */
+/* NAVBAR */
+/* NAVBAR */
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 2rem 1rem;
+  height: 10vh;
+  box-shadow: 0px 5px 21px 1px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 5px 21px 1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 5px 21px 1px rgba(0, 0, 0, 0.35);
+}
+
+nav ul {
+  display: none;
+  list-style-type: none;
+  flex-direction: column;
+  color: var(--gray);
+}
+
+#check,
+h2,
+#img-header {
+  display: none;
+}
+
+#check:checked~ul {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10%;
+  left: 2%;
+}
+
+#header-right {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#header-right #burger {
+  width: 20px;
+}
+
+#header-right h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  display: inline;
+  margin-left: 15px;
+}
+
+#shopping-cart,
+#avatar {
+  width: 25px;
+}
+
+#shopping-cart {
+  margin-right: 7px;
+}
+
+/* MAIN */
+/* MAIN */
+/* MAIN */
+/* MAIN */
+/* MAIN */
+/* MAIN */
+
+main p,
+h3,
+h4,
+h5,
+h6,
+button {
+  width: var(--docwidth-mob);
+  margin: auto;
+}
+
+main p {
+  color: var(--gray);
+  text-align: justify;
+}
+
+main #collection {
+  font-weight: 600;
+  margin: 20px auto;
+}
+
+main #slash-black {
+  color: black;
+}
+
+/*======================================================== SECTION SNEAKERS ========================================================= */
+/*======================================================== SECTION SNEAKERS ========================================================= */
+
+#sneakers1 h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#sneakers1 h4 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#prices {
+  width: var(--docwidth-mob);
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#prices h5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 300px;
+}
+
+#prices h5 span {
+  background-color: var(--pale-orange);
+  color: var(--orange);
+  font-size: medium;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  height: 30px;
+}
+
+#prices h6 {
+  color: var(--pale-gray);
+  text-decoration: line-through;
+  font-size: 1rem;
+  text-align: right;
+}
+
+#add-to-cart {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#add-to-cart #btn-grey {
+  background-color: rgba(211, 211, 211, 0.348);
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#btn-grey #min-plus {
+  color: var(--orange);
+  font-size: 1.5rem;
+}
+
+#add-to-cart #btn-orange {
+  background-color: var(--orange);
+  border-radius: 5px;
+  box-shadow: -1px 20px 24px 0px rgba(216, 102, 28, 0.58);
+  -webkit-box-shadow: -1px 20px 24px 0px rgba(216, 102, 28, 0.58);
+  -moz-box-shadow: -1px 20px 24px 0px rgba(216, 102, 28, 0.58);
+  border: none;
+  padding: 10px;
+  height: 40px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+#btn-orange img {
+  width: 15px;
+}
+
+/*======================================================== FOOTER ========================================================= */
+/*======================================================== FOOTER ========================================================= */
+
+footer {
+  background-color: var(--orange);
+  height: 15vh;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 20px;
+}
+
+#icons_rs {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+#icons_rs img {
+  width: 20px;
+  margin: 3px;
+}
+
+/* +++++++++++++++++ MEDIA QUERY DESKTOP 1024px +++++++++++++++++ */
+/* +++++++++++++++++ MEDIA QUERY DESKTOP 1024px +++++++++++++++++ */
+/* +++++++++++++++++ MEDIA QUERY DESKTOP 1024px +++++++++++++++++ */
+/* +++++++++++++++++ MEDIA QUERY DESKTOP 1024px +++++++++++++++++ */
+/* +++++++++++++++++ MEDIA QUERY DESKTOP 1024px +++++++++++++++++ */
+/* +++++++++++++++++ MEDIA QUERY DESKTOP 1024px +++++++++++++++++ */
+/* +++++++++++++++++ MEDIA QUERY DESKTOP 1024px +++++++++++++++++ */
+/* +++++++++++++++++ MEDIA QUERY DESKTOP 1024px +++++++++++++++++ */
+
+@media screen and (min-width: 1024px) {
+  /* MEDIA QUERY NAVBAR */
+  /* MEDIA QUERY NAVBAR */
+  /* MEDIA QUERY NAVBAR */
+  /* MEDIA QUERY NAVBAR */
+
+  header {
+    height: 55vh;
+    overflow: hidden;
+  }
+
+  header #header-right {
+    width: 1500px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  header #header-left {
+    display: flex;
+  }
+
+  nav {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    background-color: white;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  li {
+    padding: 20px;
+  }
+
+  #burger {
+    display: none;
+  }
+
+  #img-header {
+    display: block;
+    margin: auto;
+    flex: 0 0 auto;
+    z-index: 1;
+    position: relative;
+    height: 100px;
+    top: -150px;
+  }
+
+  #img-header {
+    height: auto;
+    max-width: 1100px;
+  }
+
+  #img-header h2 {
+    display: block;
+    color: var(--orange);
+    font-size: 4rem;
+    font-weight: 500;
+    position: absolute;
+    top: 65%;
+    right: 10%;
+  }
+
+  /* MEDIA QUERY MAIN */
+  /* MEDIA QUERY MAIN */
+  main {
+    position: relative;
+    background-color: white;
+    width: var(--docwidth-desktop);
+    margin: auto;
+  }
+
+  main p,
+  h3,
+  h4,
+  h5,
+  h6,
+  button,
+  #prices {
+    margin: 0;
+  }
+
+  #collection {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 100%;
+    margin: auto 0;
+  }
+
+  /* MEDIA QUERY SECTION SNEAKERS */
+  /* MEDIA QUERY SECTION SNEAKERS */
+  /* MEDIA QUERY SECTION SNEAKERS */
+  /* MEDIA QUERY SECTION SNEAKERS */
+
+  #img-sneakers {
+    margin-right: 40px;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 50%;
+  }
+
+  #img-sneakers img {
+    border-radius: 20px;
+    width: 300px;
+  }
+
+  #sub-sneakers {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+  }
+
+  .sneakers-cards {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  #prices {
+    padding: 20px 0;
+    display: block;
+  }
+
+  #prices h5 {
+    width: 170px;
+  }
+
+  #prices h6 {
+    text-align: left;
+  }
+
+  #add-to-cart {
+    width: 100%;
+  }
+
+  .card2 {
+    flex-direction: row-reverse;
+  }
+
+  .cards2 #img-sneakers {
+    width: 50%;
+  }
+}
